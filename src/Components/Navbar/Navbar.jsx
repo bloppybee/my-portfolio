@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">SHEPHERD</div>
+      <div className="navbar-logo"> DAVID</div>
 
       <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
         <li>

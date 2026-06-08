@@ -1,0 +1,128 @@
+.hero {
+    min-height: 85vh;
+    background: #eef1f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    z-index: 2;
+}
+
+.hero-greeting {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.hero-name {
+    font-size: 5rem;
+    line-height: 1;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-role {
+    font-size: 2.5rem;
+    color: #444;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.hero-socials {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.hero-socials a {
+    color: #222;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.hero-socials a:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+}
+
+.hero-btn {
+    color: #222;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    opacity: 0.7;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 450px;
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+/* Decorative background shapes */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.03);
+    transform: rotate(45deg);
+}
+
+.hero::before {
+    right: 20%;
+    top: 35%;
+}
+
+.hero::after {
+    right: 10%;
+    top: 50%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 24px;
+        gap: 40px;
+        min-height: auto;
+    }
+
+    .hero-socials{
+        justify-content: center;
+    }
+
+    .hero-name {
+        font-size: 3.5rem;
+    }
+
+    .hero-role {
+        font-size: 1.8rem;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+}

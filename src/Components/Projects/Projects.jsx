@@ -1,7 +1,7 @@
 import "./Projects.css";
-import torek_img from "./../../assets/torek.jpeg"
-import fastchow from "./../../assets/fastchow.jpeg"
-import evolvax from "./../../assets/evolvax.jpeg"
+import torek_img from "./../../assets/Torek.jpeg"
+import fastchow from "./../../assets/Fastchow.jpeg"
+import evolvax from "./../../assets/Evolvax.jpeg"
 
 const projects = [
   {

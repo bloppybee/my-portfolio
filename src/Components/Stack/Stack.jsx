@@ -1,7 +1,7 @@
 import "./Stack.css"
 import HTML from "./../../assets/HTML.png"
 import CSS from "./../../assets/CSS.png"
-import Javascript from "./../../assets/javascript.png"
+import Javascript from "./../../assets/Javascript.png"
 import React from "./../../assets/React.png"
 import Figma from "./../../assets/Figma.png"
 import Bootstrap from "./../../assets/Bootstrap.jpg"
